@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Document</title>
+</head>
+<body calss="root">
+
+    <section class="header">
+      <nav class="header__navigation">
+      <a href="" class="header__link">Link</a>
+      <a href="" class="header__link">Link</a>
+      <a href="" class="header__link">Link</a>
+      </nav>
+    </section>
+
+    <section class="main">
+      <form action="" class="form form_margined_true">
+        <label for="user-name" class="form__label">Ваше имя</label>
+        <input type="text" id="user-name" class="form__user-name line-form" placeholder="Вася Пупкин">
+        <label for="user-age" class="form__label">Возраст</label>
+        <input type="number" min="18" max="150" id="user-age" class="form__user-age line-form" value="18">
+        <label for="user-gender" class="form__label">Пол</label>
+        <select name="#" id="user-gender" class="form__user-gender line-form">
+          <option value="Мужской">Мужской</option>
+          <option value="Женский">Женский</option>
+          <option value="Другое">Другое</option>
+        </select>
+        <label for="comment" class="form__label">Оставьте комментарий</label>
+        <textarea id="comment" class="form__comment" placeholder="Тут ваше сообщение :)"></textarea>
+        <label for="file" class="form__label">Ваш файл</label>
+        <div class="form__visible-button">Выберите файл</div>
+        <input type="file" id="file" class="form__file hidden">
+        <label for="level" class="form__label">Оцените работу сайта</label>
+        <input type="range" min="0" max="10" step="1" class="form__level">
+        <div class="form__range-pics">
+          <img src="./pictures/sad.png" alt="Грустный смайлик" class="form__pic form__pic_size_xs">
+          <img src="./pictures/img_217835.png" alt="Веселый смайлик" class="form__pic form__pic_size_xs">
+        </div>
+        <label for="date" class="form__label">Дата отзыва</label>
+        <input type="date" class="form__date line-form">
+        <!-- тут еще возможно будут элементы одиночного выбора -->
+        <input type="submit" class="form__send-button" value="Отпрвить">
+
+      </form>
+    </section>
+
+    <section class="footer">
+      <p class="footer__author">IO, 2020</p>
+    </section>
+    <script src="./blocks/main/visible_button.js"></script>
+</body>
+</html>
